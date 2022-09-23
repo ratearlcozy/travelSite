@@ -8,13 +8,13 @@
 }
 
 .hero-container {
-    width: 100%;
+    width: 100vw;
     max-height: 700px;
     position: absolute;
 }
 
 .hero-image {
-    width: 100%;
+    width: 100vw;
     max-height: 700px;
     position: relative;
     overflow: hidden;
@@ -22,7 +22,7 @@
 }
 
 .hero-image>img {
-    width: 100%;
+    width: 100vw;
     opacity: 0.5;
 }
 
@@ -30,7 +30,7 @@
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 5px 10px;
     position: relative;
 }
 
