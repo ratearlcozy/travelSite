@@ -8,9 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>travelSiteHome</title>
+    <script src="index.js"></script> 
 </head>
 <body>
+    <div class="ham-menu" id="links">
+        <a href="#">Home</a>
+        <a href="#">Places</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+    </div>
     <div class="hero-container">
         <div class="hero-image">
             <img src="msg-newyork.jpg">
@@ -41,7 +48,7 @@
     </div>
     <div class="top-nav">
         <div class="user-login left">
-            <button class="nav-toggle"><span class="hamburger"></span></button>
+            <button class="nav-toggle" onclick="toggleNav()"><span class="hamburger"></span></button>
         </div>
         <div class="user-login right">
             <button class="login">Log In</button>
