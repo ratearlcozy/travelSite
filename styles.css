@@ -112,6 +112,46 @@
     position: relative;
 }
 
+
+
+.ham-menu {
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    width: 40%;
+    top: 40px;
+    left: 2px;
+    background-color: #3f4547;
+}
+
+.ham-menu #links {
+    display: none;
+}
+
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.links-menu>span {
+    padding: 20px;
+    height: fit-content;
+}
+
+.links-menu>span:hover {
+    background-color: #406977;
+    transition: ease-in-out 100ms;
+}
+
+.links-menu>span>a {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:white;
+    border-bottom: 1px solid #646E71;
+}
+
 @media (max-width: 900px) {
     
     .hero-container {
