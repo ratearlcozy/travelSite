@@ -181,11 +181,10 @@
         top: 40px;
         left: 2px;
         background-color: #3f4547;
-    }
-    
-    .ham-menu #links {
         display: none;
     }
+    
+    
 
     .links-menu {
         display: flex;
