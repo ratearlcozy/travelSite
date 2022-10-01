@@ -184,8 +184,6 @@
         display: none;
     }
     
-    
-
     .links-menu {
         display: flex;
         flex-direction: column;
@@ -208,5 +206,58 @@
         text-decoration: none;
         color:white;
         border-bottom: 1px solid #646E71;
+    }
+
+    .article-container {
+        width: 100%;
+        height: fit-content;
+        background-color: #6c6e6e;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .article-header {
+        font-size: 2rem;
+        color: black;
+        font-weight: bolder;
+        padding-bottom: 20px;
+    }
+
+    .article-para {
+        padding-bottom: 10px;
+        columns: 1;
+    }
+    
+    .footer-info {
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .social-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        min-height: 150px;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer-list>li {
+        list-style: none;
+    }
+
+    .footer-list>li:hover {
+        cursor: pointer;
+    }
+
+    .footer-list>li>a>img {
+        height: 20px;
+        width: 20px;
     }
 }
