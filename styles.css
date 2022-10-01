@@ -266,8 +266,8 @@
         border: none;
         border-radius: 20px;
         display: none;
-        width: 60vw;
-        height: 80vw;
+        width: 80vw;
+        height: 100vw;
         top: 250px;
         background-color: #3f4547e7;
     }
