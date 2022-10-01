@@ -32,3 +32,4 @@ function closeSignupForm() {
     form.style.display = "none":
     form.style.display = "block";
 }
+
