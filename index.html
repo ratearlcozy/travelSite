@@ -76,8 +76,39 @@
             <button class="nav-toggle" onclick="toggleNav()"><span class="hamburger"></span></button>
         </div>
         <div class="user-login right">
-            <button class="login">Log In</button>
-            <button class="login">Sign Up</button>
+            <button class="login" onclick="openFormLogin()">Log In</button>
+            <button class="login" onclick="openFormSignup()">Sign Up</button>
+        </div>
+        <div class="form-popup" id="loginForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>E-mail:</b></label>
+                <input type="text" placeholder="Enter your e-mail address.." name="email" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter your password.." name="psw" required>
+
+                <button type="submit" class="form-btn">Login</button>
+                <button type="button" class="form-btn btn-cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+        </div>
+        <div class="form-popup" id="signupForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Sign Up</h1>
+
+                <label for="email"><b>E-mail:</b></label>
+                <input type="text" placeholder="Enter your e-mail address.." name="email" required>
+
+                <label for="email"><b>Confirm E-mail:</b></label>
+                <input type="text" placeholder="Enter your e-mail address.." name="email" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter your password.." name="psw" required>
+
+                <button type="submit" class="form-btn">Sign Up</button>
+                <button type="button" class="form-btn btn-cancel" onclick="closeSignupForm()">Close</button>
+            </form>
         </div>
         <div class="ham-menu" id="links">
             <div class="links-menu">
