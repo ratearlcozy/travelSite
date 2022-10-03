@@ -28,6 +28,15 @@ function closeLoginForm() {
     form.style.display === "block" ?
     form.style.display = "none":
     form.style.display = "block";
+
+    form.dataset.active === "false" ?
+    form.dataset.active = "true" :
+    form.dataset.active = "false";
+
+    form.dataset.active === "true" ?
+    document.querySelector(".hero-container").style.filter = "blur(0px)":
+    document.querySelector(".hero-container").style.filter = "blur(4px)";
+
 }
 
 function openFormSignup() {
@@ -52,5 +61,14 @@ function closeSignupForm() {
     form.style.display === "block" ?
     form.style.display = "none":
     form.style.display = "block";
+
+    form.dataset.active === "false" ?
+    form.dataset.active = "true" :
+    form.dataset.active = "false";
+
+    form.dataset.active === "true" ?
+    document.querySelector(".hero-container").style.filter = "blur(0px)":
+    document.querySelector(".hero-container").style.filter = "blur(4px)";
+
 }
 
