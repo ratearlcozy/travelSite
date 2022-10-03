@@ -10,7 +10,18 @@ function openFormLogin() {
     form.style.display === "none" ?
     form.style.display = "block":
     form.style.display = "none";
-}
+
+    form.dataset.active === "false" ?
+    form.dataset.active = "true" :
+    form.dataset.active = "false";
+
+    let background = document.querySelectorAll(".hero-container");
+    
+    form.dataset.active === "true" ?
+    document.querySelector(".hero-container").style.filter = "blur(0px)":
+    document.querySelector(".hero-container").style.filter = "blur(4px)";
+
+ }
 
 function closeLoginForm() {
     let form = document.getElementById("loginForm");
@@ -24,6 +35,16 @@ function openFormSignup() {
     form.style.display === "none" ?
     form.style.display = "block":
     form.style.display = "none";
+
+    form.dataset.active === "false" ?
+    form.dataset.active = "true" :
+    form.dataset.active = "false";
+
+    
+    
+    form.dataset.active === "true" ?
+    document.querySelector(".hero-container").style.filter = "blur(0px)":
+    document.querySelector(".hero-container").style.filter = "blur(4px)";
 }
 
 function closeSignupForm() {
